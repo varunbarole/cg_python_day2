@@ -1,0 +1,522 @@
+C
+---
+int val = 10 ;
+int a[3] = {10,20,30};
+
+
+float
+char
+double
+long
+short
+
+
+objects in python
+-------------------
+*************Everything in python is object *****************
+*************Every object contains set of methods ***********
+
+number
+------
+number can be integer or decimal or octal or hexadecimal.
+
+val = 10
+print(val)
+
+
+string
+----
+string is sequence of characters.
+string can be defined in single quotes or double quotes or triple quotes too.
+
+aname = 'q'
+bname = "python programming"
+cname = 'unix shell scripting'
+dname = """java programming"""
+
+list ( array in C )
+-----
+list can be set of numbers or set of strings or any combination.
+list elements are defined in [].
+
+alist = [10,20,30]
+blist = ["unix","hadoop","spark"]
+clist = [10,20,"scala","java"]
+
+
+tuple ( READ ONLY)
+------
+tuple can be set of numbers or set of strings or any combination.
+tuple elements are defined in ().
+****Elements inside tuple cannot be modified ****
+
+atup = (10,20,30)
+btup = ("unix","hadoop","spark")
+ctup = (10,20,"scala","java")
+
+
+dictionary
+------------
+dictionary contains elements in the form of keys and values.
+***** keys are always unique ******
+***** value can be integer or string or list or tuple or dictionary ****
+dictionary elements are defined in {}.
+Indexing is not allowed in dictionary
+** A typical dictionary can be dictionary of lists or dictionary of tuples or dictionary of    dictionaries
+
+syntax:   object = { key:value  , key:value  , key:value }
+example:  book   = {"chap1":10  , "chap2":20  , "chap3":30 }
+          print(book["chap1"])
+
+          numbers= {1:2,3:4,5:6}
+          print(numbers[5])
+
+          info   = {"py":[10,20,30] , "sh":[40,50,60],"java":[50,60,70]}
+
+
+
+set
+----
+set is simply of group of unique elements without any order.
+set elements are defined in {}.
+Indexing is not allowed in set.
+
+aset = {10,20,30,10,20,40,50}
+
+
+classification of objects
+--------------------------
+
+mutable objects ( changable objects )
+-list
+-dictionary
+
+
+
+immutable objects  ( unchangable objects )
+-string
+-tuple
+-set
+
+
+How to display all the list of functions ?
+-------------------------------------------
+
+In interactive prompt
+
+dir(__builtins__)
+
+
+methods and functions
+---------------------
+
+methods  : methods are object specific
+           methods are accessed with . operator
+           str.upper()    list.append()  ...
+functions: functions are common for all the objects
+           print()
+
+
+most frequently used functions
+--------------------------
+print()
+input() : to capture input from keyboard and input is always string
+id()     
+type()
+isinstance()
+range()
+len()
+max()
+min()
+sum()
+
+conversion functions ( typecasting)
+-----------------------------------
+int()
+float()
+str()
+oct()
+list()
+tuple()
+dict()
+set()
+
+
+statements
+-------------
+
+conditional statements
+-  if
+-  if-else
+-  if-elif-elif..... else
+
+control statements
+-  for loop
+-  while loop
+
+jump statements
+-  break
+-  continue
+
+
+
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    level2
+    level2
+else:
+    level2
+    level2
+    level2
+    level2
+
+
+level1
+level1
+level1
+if cond:
+    level2
+    level2
+    if condition :
+	level3
+	level3
+	level3
+	level3
+else:
+    level2
+    level2
+
+
+
+operators
+----------
+arithmetic opreators
++ - * % /
+
+assignment operators
+---------------------
+=		val = 10
+val+=1   (or)   val = val + 1
+val-=1   (or)   val = val - 1
+
+
+
+
+
+
+
+val++  ( not allowed in python )
+val--  ( not allowed in python )
+
+logical operators  ( && || and ! are not allowed in python )
+-------------------
+and
+or
+not
+
+if len(name) > 0  and name.isupper() :
+    # write logic
+
+
+relational operators
+--------------------
+< > <= >= == !=
+
+
+
+looping statements
+------------------
+
+In C
+-----
+
+for ( i=1 ; i <=10 ;i++ )
+{
+	printf(..) ;
+}
+
+
+In python
+-----------
+for val in range(1,11):
+    print(val)
+
+
+
+
+file handling
+---------------
+csv   - only text
+log - only text
+mp3
+mp4
+conf  - only text
+doc/docx
+pdf
+ppt/pptx
+xlsx/xls
+txt   - only text
+bat
+jpeg
+mpeg
+dat  - only text
+
+Working with flat files  ( txt csv conf log rtf... )
+
+Working with third party files  (  doc docx  pdf ppt... )
+
+
+Working with flat files
+----------------------
+
+
+open the file
+-------------
+
+syntax :    obj = open( filename, mode )
+
+example:    fobj = open("customers.txt","r")   ---> read mode
+	    fobj = open("customers.txt","w")   ---> write mode
+	    fobj = open("customers.txt","a")   ---> append mode
+
+closing the file
+-------------------
+fobj.close()
+
+
+exception handling
+--------------------
+
+There are 2 types of errors
+
+syntax error
+sementic error (or) runtime error
+
+
+Exception handling:  Handling the exceptions in the runtime is known as exception handling
+
+try
+except
+else      --> optional
+finally   --> optional
+
+
+library  (or) package (or) module
+--------------------------------------
+library is set of methods defined by someone else for resusability purpose.
+
+builtin libraries
+-----------------
+All the builtin libraries are installed with the python.
+
+Path : C:\Python36\Lib
+
+third party libraries
+---------------------
+Based on the requirement... developer has to install the third party library from www.pypi.org
+
+path : C:\Python36\Lib\site-packages
+
+There are two ways of installing third party library
+
+1. manual setup
+
+2. pip tool/easy_install  ( installed with the python )
+
+pip depends on the ports... internet connection.
+
+
+most frequently used builtin libraries
+---------------------------------------
+math
+os
+sys
+random
+shutil
+logging
+decimal
+ftplib
+smtplib
+re ( grep + sed + awk )
+zipfile
+rarfile
+tarfile
+calendar
+json
+csv
+telnetlib
+time
+datetime
+webbrowser
+
+
+importing library
+----------------
+
+importing all the methods with .operator
+---------------------------------------
+import math             ---------------------> all the methods will be imported
+print(math.floor(3.9))
+print(math.tan(2))
+
+creating alias name
+------------------
+import math as m
+print(m.floor(3.9))
+
+importing required methods ONLY   (. is not required)
+-------------------------------
+from math import floor,ceil
+from os import listdir
+print(floor(3.2))
+print(listdir())
+
+importing everyting without .   (. is not required)
+------------------------------
+from math import *
+print(floor(3.2))
+print(listdir())
+
+
+
+
+
+
+
+
+
+python library to list files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

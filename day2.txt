@@ -1,0 +1,67 @@
+
+
+write a program to display all the numbers from 1 to 100 line by line to the file
+
+------------------------------------------------
+write a program to read realestate.csv and display only street and city from the file.
+------------------------------------------------
+write a program to read realestate.csv and display the below information.
+
+Output:
+Residential type flats  : 456
+Non residential types   : 100
+------------------------------------------------
+write  a program to display all the unique city names
+
+------------------------------------------------
+
+write a program to list ONLY .csv files of the current directory with proper exception handling
+------------------------------------------------
+
+write a program to count the no.of files and directories in the current directory.
+
+No. of files       : 33
+No. of directories : 2
+--------------------------------------------------------------------
+write a proram to display only the files where size is greater than 0
+-------------------------------------------------------------------
+
+write a program to delete all the files ending with .txt from current directory.
+-------------------------------------------------------------------
+
+write a program to create 100 directories in the below format
+
+dir1
+dir2
+dir3
+..
+..
+dir100
+
+
+write a program to delete all the 100 created directories.
+
+
+
+create two directories in the current folder
+
+
+
+
+write a program to list of all the files of the current directory to the excel file.
+
+
+write a program to read realestate.csv and write the output to excel file and
+excel name should be with today's timestamp.
+
+Output : 11_Jun_2018.xlsx
+
+
+
+
+
+
+
+
+
+
